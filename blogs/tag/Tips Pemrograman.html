@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="id" xml:lang="id">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		
+		<link href="../../_app/immutable/assets/0.2d22c3cb.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.174ef7c4.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.1475189b.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/singletons.169e3e08.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.7516a074.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/paths.f7a1ae21.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.d8215686.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.91b01f24.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/i18n.20789252.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/3.167f8796.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/12.1c630ea2.js"><title>Refactory&#39;s Blog - Tips Pemrograman</title><!-- HEAD_svelte-bkvk10_START --><!-- HTML_TAG_START --><!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-KT3RL8D');</script>
+		<!-- End Google Tag Manager -->
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-EBERC25KRT"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-EBERC25KRT');
+		</script>
+		<!-- HTML_TAG_END --><!-- HEAD_svelte-bkvk10_END --><!-- HEAD_svelte-zl2ec1_START --><!-- HEAD_svelte-zl2ec1_END -->
+	</head>
+	<body>
+		<div class="min-h-screen">
+		  <div class="relative overflow-hidden" id="svelte">
+				
+
+
+
+
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT3RL8D" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<header class="relative"><div class="relative bg-white"><div class="bg-gray-900 flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10"><div class=""><a href="/" class="flex"><span class="sr-only">Refactory</span>
+					<img class="h-8 w-auto sm:h-10" src="/_app/immutable/assets/refactory-logo.2ed41d7c.png" alt="Refactory"></a></div>
+			<div class="-mr-2 -my-2 md:hidden"><button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-expanded="false"><span class="sr-only">Open menu</span>
+					<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div>
+			<div class="hidden md:flex space-x-10"><nav class="flex space-x-10"><div class="relative"><button type="button" class="text-blue-400 group bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-100 focus:outline-none" aria-expanded="false"><span>Solusi</span>
+							<svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+
+						</div>
+
+					
+
+					<div class="relative">
+						<button type="button" class="text-blue-400 group bg-gray-900 rounded-md inline-flex items-center text-base font-medium hover:text-gray-100 focus:outline-none" aria-expanded="false"><span>Sumberdaya</span>
+							
+							<svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+
+						</div></nav></div>
+
+			<div class="text-inherit ml-auto absolute right-20 cursor-pointer p-1 rounded-lg bg-white flex flex-row gap-2"><select class="w-24 bg-transparent border-none cursor-pointer focus:outline-none"><option class="bg-transparent" value="id"><p class="p-2 w-full">ID</p>
+						</option><option class="bg-transparent" value="en"><p class="p-2 w-full">EN</p>
+						</option></select></div></div>
+
+		</div>
+
+</header>
+
+<main><div class="bg-gray-900"><div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between"><div class="max-w-xl"><h2 class="text-4xl font-extrabold text-white sm:text-5xl sm:tracking-tight lg:text-6xl">Tulisan Terbaru
+      </h2>
+      <p class="mt-5 text-xl text-gray-400">Wawasan baru maupun tips</p></div></div></div>
+
+
+
+<div class="mx-auto w-full md:w-2/3 my-16"><div class="grid grid-cols-1 lg:grid-cols-2 gap-16 px-6 lg:px-0"><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-11-13-mengawasi-dua-atau-lebih-proyek-sekaligus:-tantangan-dan-strategi-project-manager" class="hover:underline">Mengawasi Dua atau Lebih Proyek Sekaligus - Tantangan dan Strategi Project Manager</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Nov 13, 2023">Nov 13, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Mengelola beberapa proyek sekaligus bisa menjadi tugas yang menantang bagi seorang Project Manager (PM). Lalu apa saja poin penting terkait dengan cara seorang PM dapat mengawasi dan mengelola dua atau lebih proyek secara efektif?</p>
+        <div class="mt-3"><a href="/blogs/post/2023-11-13-mengawasi-dua-atau-lebih-proyek-sekaligus:-tantangan-dan-strategi-project-manager" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-11-10-perbandingan-framework-angular-dan-react" class="hover:underline">Perbandingan Framework Angular dan React</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Nov 10, 2023">Nov 10, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Pemilihan framework JavaScript merupakan langkah krusial dalam pengembangan aplikasi web modern. Angular dan React, kedua-duanya populer dan didukung oleh komunitas yang besar, menawarkan pendekatan yang berbeda dalam membangun aplikasi. Dalam tulisan ini, kita akan merinci perbandingan antara Angular dan React, membantu pengembang dalam membuat keputusan yang informan.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-11-10-perbandingan-framework-angular-dan-react" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-11-09-apa-saja-framework-javascript-yang-penting-dipelajari-pemula" class="hover:underline">Apa Saja Framework Javascript Yang Penting Dipelajari Pemula?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Nov 9, 2023">Nov 9, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Sebelum memasuki dunia framework JavaScript, pemula perlu mempersiapkan diri dengan pemahaman yang kuat tentang bahasa pemrograman JavaScript itu sendiri. Menguasai konsep dasar seperti variabel, fungsi, loop, dan objek akan membantu pemula lebih mudah memahami konsep-konsep yang diterapkan dalam framework.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-11-09-apa-saja-framework-javascript-yang-penting-dipelajari-pemula" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-10-25-apa-itu-gradle" class="hover:underline">Apa Itu Gradle?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Oct 25, 2023">Oct 25, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Gradle adalah alat sumber terbuka (open-source) yang digunakan dalam pengembangan perangkat lunak untuk mengotomatisasi berbagai tugas seperti kompilasi, pengujian, paket aplikasi, dan lainnya. Ini digunakan terutama dalam pengembangan perangkat lunak Java, tetapi juga mendukung sejumlah bahasa pemrograman lainnya, termasuk C++, Python, dan banyak lagi.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-10-25-apa-itu-gradle" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-10-20-apa-itu-rest-api" class="hover:underline">Apa itu REST API?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Oct 20, 2023">Oct 20, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">REST API (Representational State Transfer Application Programming Interface) adalah gaya arsitektur perangkat lunak yang digunakan dalam pengembangan web. Ini memungkinkan komunikasi antara berbagai sistem perangkat lunak melalui internet dengan menggabungkan prinsip-prinsip sederhana seperti representasi sumber daya, metode HTTP standar (seperti GET, POST, PUT, dan DELETE), dan URI (Uniform Resource Identifier) yang unik untuk mengidentifikasi sumber daya.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-10-20-apa-itu-rest-api" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-10-19-apa-itu-css" class="hover:underline">Apa itu CSS?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Oct 19, 2023">Oct 19, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">CSS (Cascading Style Sheets) adalah bahasa pemrograman yang digunakan untuk mengontrol tampilan dan format halaman web. Ini memungkinkan pengembang web untuk memisahkan struktur dokumen HTML dari tampilan visual. Sejarah CSS mencakup perkembangan yang panjang, dan berikut adalah beberapa poin kunci dalam sejarahnya.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-10-19-apa-itu-css" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-10-18-apa-itu-npm-dan-fungsinya" class="hover:underline">Apa Itu NPM dan Fungsinya?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Oct 18, 2023">Oct 18, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">NPM (Node Package Manager) adalah manajer paket untuk lingkungan pengembangan JavaScript yang paling terkenal. Berikut sejarah singkat NPM...</p>
+        <div class="mt-3"><a href="/blogs/post/2023-10-18-apa-itu-npm-dan-fungsinya" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-10-16-apa-manfaat-berkontribusi-di-stack-overflow" class="hover:underline">Apa Manfaat Berkontribusi di Stack Overflow?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Oct 16, 2023">Oct 16, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Berkontribusi di Stack Overflow, platform tanya jawab untuk pengembang perangkat lunak dan programmer, memiliki banyak manfaat...</p>
+        <div class="mt-3"><a href="/blogs/post/2023-10-16-apa-manfaat-berkontribusi-di-stack-overflow" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-10-06-mengapa-sebuah-kode-harus-mudah-dipahami-dan-dirawat" class="hover:underline">Mengapa Sebuah Kode Harus Mudah Dipahami dan Dirawat?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Oct 6, 2023">Oct 6, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Seorang programmer yang baik adalah seseorang yang dapat membuat kode yang dapat dibaca oleh orang lain, sementara programmer yang hebat adalah seseorang yang dapat membuat kode yang dapat dimengerti oleh dirinya sendiri di masa depan. Kode yang mudah dipahami dan dipelihara memiliki banyak manfaat dan penting karena berdampak pada berbagai aspek dalam pengembangan perangkat lunak.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-10-06-mengapa-sebuah-kode-harus-mudah-dipahami-dan-dirawat" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-10-05-mengenal-prinsip-desain-solid-dalam-pemrograman" class="hover:underline">Mengenal Prinsip Desain SOLID dalam Pemrograman</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Oct 5, 2023">Oct 5, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Konsep SOLID adalah seperangkat prinsip desain pemrograman yang dirancang untuk menghasilkan kode yang lebih mudah dipahami, dipelihara, dan dikembangkan. Konsep SOLID merupakan pedoman yang membantu pengembang perangkat lunak untuk menghasilkan kode yang bersih, terstruktur, dan fleksibel.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-10-05-mengenal-prinsip-desain-solid-dalam-pemrograman" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-10-04-apa-itu-single-responsibility-principle" class="hover:underline">Apa Itu Single Responsibility Principle?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Oct 4, 2023">Oct 4, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Single Responsibility Principle (SRP) adalah salah satu dari lima prinsip desain dalam SOLID, sebuah set prinsip yang digunakan untuk mengembangkan perangkat lunak yang mudah dipahami, diubah, dan dipelihara. SRP adalah prinsip yang mendefinisikan bahwa sebuah kelas atau modul harus memiliki satu alasan untuk berubah, yaitu satu tanggung jawab utama.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-10-04-apa-itu-single-responsibility-principle" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-10-03-apa-solution-architect-itu" class="hover:underline">Apa Solution Architect itu?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Oct 3, 2023">Oct 3, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Solution Architect (Arsitek Solusi) adalah peran profesional dalam dunia teknologi informasi dan pengembangan perangkat lunak yang bertanggung jawab untuk merancang solusi teknologi yang efektif dan efisien untuk memenuhi kebutuhan bisnis atau proyek tertentu. Arsitek solusi berperan dalam merancang arsitektur sistem, mengidentifikasi teknologi yang sesuai, dan mengawasi implementasi solusi teknologi tersebut.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-10-03-apa-solution-architect-itu" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-09-27-berkenalan-dengan-mysql-bagi-pemula" class="hover:underline">Berkenalan Dengan MySQL Bagi Pemula</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 27, 2023">Sep 27, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">MySQL adalah sistem manajemen basis data (Database Management System - DBMS) yang populer dan open-source. Sejarah MySQL dimulai pada pertengahan tahun 1990-an dan telah berkontribusi secara signifikan terhadap dunia pengembangan perangkat lunak dan bisnis.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-09-27-berkenalan-dengan-mysql-bagi-pemula" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-09-26-memahami-stlc-atau-software-testing-life-cycle" class="hover:underline">Memahami STLC atau Software Testing Life Cycle</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 26, 2023">Sep 26, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">STLC (Software Testing Life Cycle) adalah serangkaian langkah dan aktivitas yang digunakan dalam proses pengujian perangkat lunak. STLC memiliki beberapa manfaat penting dalam pengembangan perangkat lunak dan bisa digunakan sesuai kebutuhan masing-masing programer.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-09-26-memahami-stlc-atau-software-testing-life-cycle" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-09-25-pentingnya-belajar-programming-culture-bagi-pemula" class="hover:underline">Pentingnya Belajar Programming Culture bagi Pemula</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 25, 2023">Sep 25, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Budaya pemrograman (programming culture) telah berkembang selama beberapa dekade seiring dengan perkembangan industri teknologi informasi dan komputer. Meskipun sulit untuk menentukan asal usulnya dengan pasti, ada beberapa faktor dan tonggak sejarah yang telah membentuk budaya pemrograman seperti yang kita kenal saat ini mulai dari pionir dan perkembangan teknologi.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-09-25-pentingnya-belajar-programming-culture-bagi-pemula" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-09-22-bagaimana-cara-ai-membantu-review-code-programmer" class="hover:underline">Bagaimana Cara AI Membantu Review Code Programmer</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 22, 2023">Sep 22, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Ada beberapa alasan mengapa Refactory melakukan investasi teknologi ke AI. Manfaat dari penggunaan AI dalam proses review kode programmer sangat beragam dan signifikan. Salah satu manfaat paling mencolok dari AI dalam review kode adalah kemampuannya untuk mendeteksi bug dan masalah kualitas dengan lebih cepat dan akurat daripada review manual.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-09-22-bagaimana-cara-ai-membantu-review-code-programmer" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-09-21-apa-peran-ui-ux-designer-dalam-pengembangan-aplikasi" class="hover:underline">Apa Peran UI/UX Designer dalam Pengembangan Aplikasi</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 21, 2023">Sep 21, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Peran UI (User Interface) dan UX (User Experience) dalam pengembangan aplikasi sangat penting karena keduanya berfokus pada bagaimana pengguna berinteraksi dengan aplikasi dan bagaimana mereka merasakan pengalaman pengguna.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-09-21-apa-peran-ui-ux-designer-dalam-pengembangan-aplikasi" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-09-20-apa-beda-qa-tester-dan-qa-engineer" class="hover:underline">Apa beda QA Tester dan QA Engineer</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 20, 2023">Sep 20, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Setiap pengembang pasti membutuhkan peran serta QA. Mereka membantu dalam mengidentifikasi dan melaporkan bug, kesalahan, dan masalah dalam perangkat lunak yang dikembangkan. Ini membantu programmer untuk memperbaiki masalah tersebut sebelum perangkat lunak diterapkan ke pengguna akhir.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-09-20-apa-beda-qa-tester-dan-qa-engineer" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-09-19-tips-melakukan-hallway-testing" class="hover:underline">Tips Melakukan Hallway Testing</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 19, 2023">Sep 19, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Hallway testing adalah metode pengujian yang melibatkan pengguna yang tidak terlibat dalam pengembangan produk untuk memberikan umpan balik secepat mungkin. Ini adalah cara yang efektif untuk mengidentifikasi masalah atau potensi perbaikan dalam produk Anda.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-09-19-tips-melakukan-hallway-testing" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-09-18-kelebihan-menulis-clean-code-bagi-pemula" class="hover:underline">Kelebihan Menulis Clean Code Bagi Pemula</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 18, 2023">Sep 18, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Menulis kode yang bersih (clean code) adalah salah satu aspek yang sangat penting dalam pengembangan perangkat lunak. Bagi pemula yang baru memasuki dunia pemrograman, penting untuk memahami mengapa menulis clean code adalah praktik yang sangat dianjurkan dan berharga.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-09-18-kelebihan-menulis-clean-code-bagi-pemula" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-09-12-tips-adaptasi-stack-teknologi-pemrograman-baru" class="hover:underline">Tips Adaptasi Stack Teknologi Pemrograman Baru</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 12, 2023">Sep 12, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Mengadaptasi diri dengan stack pemrograman baru adalah langkah penting dalam pengembangan profesional di dunia teknologi.  Dalam dunia teknologi yang terus berkembang dengan cepat, kemampuan untuk beradaptasi dengan berbagai stack teknologi menjadi sangat penting. Stack teknologi merujuk pada kombinasi alat, bahasa pemrograman, dan kerangka kerja yang digunakan untuk membangun aplikasi dan solusi perangkat lunak.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-09-12-tips-adaptasi-stack-teknologi-pemrograman-baru" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-06-27-kenapa-ai-masih-belum-bisa-mengganti-peran-project-manager" class="hover:underline">Kenapa AI Masih Belum Bisa Mengganti Peran Project Manager?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Jun 27, 2023">Jun 27, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Meskipun kecerdasan buatan (AI) telah membuat kemajuan signifikan dalam berbagai bidang, ada beberapa alasan mengapa AI saat ini tidak dapat sepenuhnya menggantikan peran  Project Manager (PM) dalam pengelolaan proyek. Berikut adalah beberapa alasan utama...</p>
+        <div class="mt-3"><a href="/blogs/post/2023-06-27-kenapa-ai-masih-belum-bisa-mengganti-peran-project-manager" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-05-22-kutipan-tentang-pemrograman-yang-akan-membuatmu-bersemangat-belajar-ngoding" class="hover:underline">Kutipan Tentang Pemrograman Yang Akan Membuatmu Bersemangat Belajar Ngoding</a></p>
+        <p class="text-xs text-gray-500"><time datetime="May 22, 2023">May 22, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Saat kita lelah dan tak bersemangat, seringkali menemukan saran atau dorongan yang tepat bisa mengembalikan keinginan untuk bekerja. Kami di Refactory juga memiliki kutipan yang dituliskan di dinding, agar setiap hari saat bekerja, memiliki semangat yang sama. Keinginan untuk lebih baik dan terus tumbuh.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-05-22-kutipan-tentang-pemrograman-yang-akan-membuatmu-bersemangat-belajar-ngoding" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-05-16-mencari-topik-spesifik-di-google-itu-skill-penting" class="hover:underline">Mencari Topik Spesifik di Google Itu Skill Penting</a></p>
+        <p class="text-xs text-gray-500"><time datetime="May 16, 2023">May 16, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Salah satu skill yang wajib dimiliki oleh programmer adalah kemampuan mencari informasi. Entah melalui Google, StackOverflow, atau tempat lainnya. Secara umum banyak orang tidak sadar cara mencari informasi, entah karena tidak paham logika pencarian, atau memang kurang fokus dalam berusaha.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-05-16-mencari-topik-spesifik-di-google-itu-skill-penting" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-05-15-apa-yang-dimaksud-dengan-boilerplate-code" class="hover:underline">Apa Yang Dimaksud Dengan Boilerplate Code</a></p>
+        <p class="text-xs text-gray-500"><time datetime="May 15, 2023">May 15, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Dalam pemrograman komputer, kode boilerplate, atau hanya boilerplate, adalah bagian dari kode yang diulang di banyak tempat dengan sedikit atau tanpa variasi. Saat menggunakan bahasa yang dianggap bertele-tele, pemrogram harus menulis banyak kode boilerplate untuk menyelesaikan hanya fungsionalitas kecil.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-05-15-apa-yang-dimaksud-dengan-boilerplate-code" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-04-14-mengapa-programmer-perlu-baca-buku" class="hover:underline">Mengapa Programmer Perlu Baca Buku</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Apr 14, 2023">Apr 14, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Apakah programmer perlu membaca buku? Jawaban pendeknya: perlu. Tapi mengapa? Membaca bukan hanya membantu meningkatkan keterampilan bahasa dan kosa kata seseorang, tetapi juga membantu memperluas wawasan dan pemahaman tentang dunia di sekitar kita. Oleh karena itu, penting untuk mengembangkan kebiasaan membaca secara teratur.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-04-14-mengapa-programmer-perlu-baca-buku" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2023-04-12-apa-sih-pendekatan-extreme-programing" class="hover:underline">Apa sih Pendekatan Extreme Programing</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Apr 12, 2023">Apr 12, 2023</time></p>
+        <p class="mt-3 text-base text-gray-500">Pendekatan Agile Development adalah sebuah metodologi pengembangan perangkat lunak yang berfokus pada kerjasama tim, keterlibatan pelanggan, dan responsibilitas individual. Pendekatan ini berbeda dengan pendekatan tradisional Waterfall yang lebih berfokus pada perencanaan yang detail dan proses linear.</p>
+        <div class="mt-3"><a href="/blogs/post/2023-04-12-apa-sih-pendekatan-extreme-programing" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2022-09-23-cara-manajemen-yang-oke" class="hover:underline">Cara Memanajemen Proyek Yang Oke: Manfaatkan Kalender</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 23, 2022">Sep 23, 2022</time></p>
+        <p class="mt-3 text-base text-gray-500">Kalender merupakan alat yang sangat berguna untuk melacak acara-acara mendatang, deadline, dan juga capaian yang sudah dibuat.</p>
+        <div class="mt-3"><a href="/blogs/post/2022-09-23-cara-manajemen-yang-oke" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2022-09-09-tips-agar-bisa-mudah-menguasai-bahasa-inggris" class="hover:underline">Tips Agar Bisa Mudah Menguasai Bahasa Inggris</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Sep 9, 2022">Sep 9, 2022</time></p>
+        <p class="mt-3 text-base text-gray-500">Untuk menguasai bahasa inggris, di Refactory kami membagikan beberapa tips. Misalnya mendengarkan musik, menonton film, atau berkomunikasi setiap harinya.</p>
+        <div class="mt-3"><a href="/blogs/post/2022-09-09-tips-agar-bisa-mudah-menguasai-bahasa-inggris" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2022-08-26-apa-itu-upskilling-dan-reskilling" class="hover:underline">Apa itu Upskilling dan Reskilling?</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Aug 26, 2022">Aug 26, 2022</time></p>
+        <p class="mt-3 text-base text-gray-500">Sejak pandemi hadir, cara kita memandang pekerjaan berubah. Dalam Laporan Forum Ekonomi Dunia (WEF) 2022  memperkirakan bahwa dalam 10 tahun ke depan, munculnya teknologi dan otomatisasi baru akan memicu masuknya pekerjaan baru dalam profesi yang sedang berkembang.</p>
+        <div class="mt-3"><a href="/blogs/post/2022-08-26-apa-itu-upskilling-dan-reskilling" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2022-07-19-lima-cara-jadi-pengguna-stackoverflow-yang-baik" class="hover:underline">Lima Cara Jadi Pengguna StackOverflow Yang Baik</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Jul 19, 2022">Jul 19, 2022</time></p>
+        <p class="mt-3 text-base text-gray-500">StackOverflow menjadi salah satu hal yang penting untuk dipahami oleh programmer. Situs ini menyediakan banyak layanan dan juga pengetahuan bagi mereka yang hendak belajar pemrograman.</p>
+        <div class="mt-3"><a href="/blogs/post/2022-07-19-lima-cara-jadi-pengguna-stackoverflow-yang-baik" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2021-08-19-tetap-semangat-kembali-kerja-di-kantor-setelah-wfh" class="hover:underline">Tetap Semangat Kembali Kerja Di Kantor Setelah WFH</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Aug 19, 2021">Aug 19, 2021</time></p>
+        <p class="mt-3 text-base text-gray-500">Meski demikian kabar baik penurunan angka penularan membuat kita rindu kantor. Bertemu dengan kolega, bekerja secara langsung, dan melakukan perjalanan konon jadi salah satu hal yang dirindukan.</p>
+        <div class="mt-3"><a href="/blogs/post/2021-08-19-tetap-semangat-kembali-kerja-di-kantor-setelah-wfh" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div><div><p class="mb-2"><a href="/blogs/tag/Tips Pemrograman" class="text-indigo-600 hover:bg-indigo-600 hover:text-white inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100">Tips Pemrograman
+            </a></p>
+        <p class="text-xl font-semibold text-gray-900"><a href="/blogs/post/2021-07-27-beberapa-tips-untuk-membantu-belajar-pemrograman-lebih-efektif" class="hover:underline">Beberapa Tips untuk Membantu Belajar Pemrograman Lebih Efektif</a></p>
+        <p class="text-xs text-gray-500"><time datetime="Jul 27, 2021">Jul 27, 2021</time></p>
+        <p class="mt-3 text-base text-gray-500">Perlu diingat bahwa setiap tips yang ada di Internet difokuskan untuk mendorong upaya belajar mandiri. Tidak ada cara jitu belajar pemrograman yang dilalui dengan instan.</p>
+        <div class="mt-3"><a href="/blogs/post/2021-07-27-beberapa-tips-untuk-membantu-belajar-pemrograman-lebih-efektif" class="text-base font-semibold text-indigo-600 hover:text-indigo-500 hover:underline">Read full story
+          </a></div>
+      </div></div></div></main>
+
+<footer class="bg-gray-100" aria-labelledby="footer-heading"><h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8"><div class="xl:grid xl:grid-cols-3 xl:gap-8"><div class="space-y-8 xl:col-span-2"><img class="h-14" src="/_app/immutable/assets/refactory-logo.820ec56e.png" alt="Refactory">
+        <p class="text-gray-400 text-sm w-85">Refactory adalah pengaktif teknologi digital di Indonesia. Sejak didirikan pada 2015 di Surabaya dan membuka Bootcamp kelas pertama pada 2017 di Bandung, Refactory telah berkembang melebihi Bootcamp dengan menambah berbagai solusi untuk memberdayakan anak-anak muda Indonesia melalui pemrograman, serta membantu perusahaan di tingkat nasional maupun mancanegara untuk merealisasikan potensi mereka.</p>
+
+        <p class="text-gray-500 text-sm">Kantor Utama di Jl. Samberembe, Candibinangun, Kec. Pakem, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55582 - Indonesia</p></div>
+      <div class="mt-12 gap-8 xl:mt-0 xl:col-span-1"><div class="md:grid md:grid-cols-2 md:gap-8"><div><h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">PERUSAHAAN</h3>
+            <ul role="list" class="mt-4 space-y-4"><li><a href="/about" class="text-base text-gray-500 hover:text-gray-900">Tentang Kami</a></li>
+
+              <li><a href="/okr" class="text-base text-gray-500 hover:text-gray-900">OKR</a></li>
+
+              <li><a href="/work-with-us" class="text-base text-gray-500 hover:text-gray-900">Karir
+									<span class="inline-flex items-center px-1.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800"><svg class="-ml-0.5 mr-0.5 h-2 w-2 text-yellow-400" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"></circle></svg>
+										SEDANG MEREKRUT</span></a></li>
+              <li><h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Media Sosial</h3>
+                <ul role="list" class="mt-4 space-y-4"><li><a href="https://facebook.com/refactoryid" class="text-base text-gray-500 hover:text-gray-900" target="_blank" rel="noreferrer noopener nofollow">Facebook
+                    </a></li>
+                  <li><a href="https://instagram.com/refactory.id" class="text-base text-gray-500 hover:text-gray-900" target="_blank" rel="noreferrer noopener nofollow">Instagram
+                    </a></li>
+                  <li><a href="https://id.linkedin.com/school/refactory-id" class="text-base text-gray-500 hover:text-gray-900" target="_blank" rel="noreferrer noopener nofollow">LinkedIn
+                    </a></li></ul></li></ul></div>
+          <div class="mt-12 md:mt-0"><h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">LEGAL</h3>
+            <ul role="list" class="mt-4 space-y-4"><li><a href="/privacy-policy" class="text-base text-gray-500 hover:text-gray-900">Kebijakan data pribadi</a></li>
+
+              <li><a href="/tos" class="text-base text-gray-500 hover:text-gray-900">Ketentuan Layanan</a></li></ul>
+
+            <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mt-8">Partnership</h3>
+            <ul role="list" class="mt-4 space-y-4"><li><a href="https://www.designrush.com/agency/hr-outsourcing/trends/remote-onboarding" class="text-base text-gray-500 hover:text-gray-900" target="_blank" rel="noreferrer noopener">DesignRush
+                </a></li></ul></div></div></div></div>
+    <div class="mt-12 border-t border-gray-200 pt-8"><p class="text-xs text-gray-600 xl:text-center">© 2017-2025 PT. BIXBOX TEKNOLOGI PERKASA. All rights reserved.
+      </p></div></div>
+</footer>
+
+
+			<script type="application/json" data-sveltekit-fetched data-url="/blogs/tag/Tips%20Pemrograman.json">{"status":200,"statusText":"","headers":{},"body":"[{\"metadata\":{\"title\":\"Mengawasi Dua atau Lebih Proyek Sekaligus - Tantangan dan Strategi Project Manager\",\"date\":\"Nov 13, 2023\",\"excerpt\":\"Mengelola beberapa proyek sekaligus bisa menjadi tugas yang menantang bagi seorang Project Manager (PM). Lalu apa saja poin penting terkait dengan cara seorang PM dapat mengawasi dan mengelola dua atau lebih proyek secara efektif?\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-11-13-mengawasi-dua-atau-lebih-proyek-sekaligus:-tantangan-dan-strategi-project-manager\"},{\"metadata\":{\"title\":\"Perbandingan Framework Angular dan React\",\"date\":\"Nov 10, 2023\",\"excerpt\":\"Pemilihan framework JavaScript merupakan langkah krusial dalam pengembangan aplikasi web modern. Angular dan React, kedua-duanya populer dan didukung oleh komunitas yang besar, menawarkan pendekatan yang berbeda dalam membangun aplikasi. Dalam tulisan ini, kita akan merinci perbandingan antara Angular dan React, membantu pengembang dalam membuat keputusan yang informan.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-11-10-perbandingan-framework-angular-dan-react\"},{\"metadata\":{\"title\":\"Apa Saja Framework Javascript Yang Penting Dipelajari Pemula?\",\"date\":\"Nov 9, 2023\",\"excerpt\":\"Sebelum memasuki dunia framework JavaScript, pemula perlu mempersiapkan diri dengan pemahaman yang kuat tentang bahasa pemrograman JavaScript itu sendiri. Menguasai konsep dasar seperti variabel, fungsi, loop, dan objek akan membantu pemula lebih mudah memahami konsep-konsep yang diterapkan dalam framework.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-11-09-apa-saja-framework-javascript-yang-penting-dipelajari-pemula\"},{\"metadata\":{\"title\":\"Apa Itu Gradle?\",\"date\":\"Oct 25, 2023\",\"excerpt\":\"Gradle adalah alat sumber terbuka (open-source) yang digunakan dalam pengembangan perangkat lunak untuk mengotomatisasi berbagai tugas seperti kompilasi, pengujian, paket aplikasi, dan lainnya. Ini digunakan terutama dalam pengembangan perangkat lunak Java, tetapi juga mendukung sejumlah bahasa pemrograman lainnya, termasuk C++, Python, dan banyak lagi.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-10-25-apa-itu-gradle\"},{\"metadata\":{\"title\":\"Apa itu REST API?\",\"date\":\"Oct 20, 2023\",\"excerpt\":\"REST API (Representational State Transfer Application Programming Interface) adalah gaya arsitektur perangkat lunak yang digunakan dalam pengembangan web. Ini memungkinkan komunikasi antara berbagai sistem perangkat lunak melalui internet dengan menggabungkan prinsip-prinsip sederhana seperti representasi sumber daya, metode HTTP standar (seperti GET, POST, PUT, dan DELETE), dan URI (Uniform Resource Identifier) yang unik untuk mengidentifikasi sumber daya.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-10-20-apa-itu-rest-api\"},{\"metadata\":{\"title\":\"Apa itu CSS?\",\"date\":\"Oct 19, 2023\",\"excerpt\":\"CSS (Cascading Style Sheets) adalah bahasa pemrograman yang digunakan untuk mengontrol tampilan dan format halaman web. Ini memungkinkan pengembang web untuk memisahkan struktur dokumen HTML dari tampilan visual. Sejarah CSS mencakup perkembangan yang panjang, dan berikut adalah beberapa poin kunci dalam sejarahnya.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-10-19-apa-itu-css\"},{\"metadata\":{\"title\":\"Apa Itu NPM dan Fungsinya?\",\"date\":\"Oct 18, 2023\",\"excerpt\":\"NPM (Node Package Manager) adalah manajer paket untuk lingkungan pengembangan JavaScript yang paling terkenal. Berikut sejarah singkat NPM...\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-10-18-apa-itu-npm-dan-fungsinya\"},{\"metadata\":{\"title\":\"Apa Manfaat Berkontribusi di Stack Overflow?\",\"date\":\"Oct 16, 2023\",\"excerpt\":\"Berkontribusi di Stack Overflow, platform tanya jawab untuk pengembang perangkat lunak dan programmer, memiliki banyak manfaat...\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-10-16-apa-manfaat-berkontribusi-di-stack-overflow\"},{\"metadata\":{\"title\":\"Mengapa Sebuah Kode Harus Mudah Dipahami dan Dirawat?\",\"date\":\"Oct 6, 2023\",\"excerpt\":\"Seorang programmer yang baik adalah seseorang yang dapat membuat kode yang dapat dibaca oleh orang lain, sementara programmer yang hebat adalah seseorang yang dapat membuat kode yang dapat dimengerti oleh dirinya sendiri di masa depan. Kode yang mudah dipahami dan dipelihara memiliki banyak manfaat dan penting karena berdampak pada berbagai aspek dalam pengembangan perangkat lunak.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-10-06-mengapa-sebuah-kode-harus-mudah-dipahami-dan-dirawat\"},{\"metadata\":{\"title\":\"Mengenal Prinsip Desain SOLID dalam Pemrograman\",\"date\":\"Oct 5, 2023\",\"excerpt\":\"Konsep SOLID adalah seperangkat prinsip desain pemrograman yang dirancang untuk menghasilkan kode yang lebih mudah dipahami, dipelihara, dan dikembangkan. Konsep SOLID merupakan pedoman yang membantu pengembang perangkat lunak untuk menghasilkan kode yang bersih, terstruktur, dan fleksibel.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-10-05-mengenal-prinsip-desain-solid-dalam-pemrograman\"},{\"metadata\":{\"title\":\"Apa Itu Single Responsibility Principle?\",\"date\":\"Oct 4, 2023\",\"excerpt\":\"Single Responsibility Principle (SRP) adalah salah satu dari lima prinsip desain dalam SOLID, sebuah set prinsip yang digunakan untuk mengembangkan perangkat lunak yang mudah dipahami, diubah, dan dipelihara. SRP adalah prinsip yang mendefinisikan bahwa sebuah kelas atau modul harus memiliki satu alasan untuk berubah, yaitu satu tanggung jawab utama.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-10-04-apa-itu-single-responsibility-principle\"},{\"metadata\":{\"title\":\"Apa Solution Architect itu?\",\"date\":\"Oct 3, 2023\",\"excerpt\":\"Solution Architect (Arsitek Solusi) adalah peran profesional dalam dunia teknologi informasi dan pengembangan perangkat lunak yang bertanggung jawab untuk merancang solusi teknologi yang efektif dan efisien untuk memenuhi kebutuhan bisnis atau proyek tertentu. Arsitek solusi berperan dalam merancang arsitektur sistem, mengidentifikasi teknologi yang sesuai, dan mengawasi implementasi solusi teknologi tersebut.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-10-03-apa-solution-architect-itu\"},{\"metadata\":{\"title\":\"Berkenalan Dengan MySQL Bagi Pemula\",\"date\":\"Sep 27, 2023\",\"excerpt\":\"MySQL adalah sistem manajemen basis data (Database Management System - DBMS) yang populer dan open-source. Sejarah MySQL dimulai pada pertengahan tahun 1990-an dan telah berkontribusi secara signifikan terhadap dunia pengembangan perangkat lunak dan bisnis.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-09-27-berkenalan-dengan-mysql-bagi-pemula\"},{\"metadata\":{\"title\":\"Memahami STLC atau Software Testing Life Cycle\",\"date\":\"Sep 26, 2023\",\"excerpt\":\"STLC (Software Testing Life Cycle) adalah serangkaian langkah dan aktivitas yang digunakan dalam proses pengujian perangkat lunak. STLC memiliki beberapa manfaat penting dalam pengembangan perangkat lunak dan bisa digunakan sesuai kebutuhan masing-masing programer.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-09-26-memahami-stlc-atau-software-testing-life-cycle\"},{\"metadata\":{\"title\":\"Pentingnya Belajar Programming Culture bagi Pemula\",\"date\":\"Sep 25, 2023\",\"excerpt\":\"Budaya pemrograman (programming culture) telah berkembang selama beberapa dekade seiring dengan perkembangan industri teknologi informasi dan komputer. Meskipun sulit untuk menentukan asal usulnya dengan pasti, ada beberapa faktor dan tonggak sejarah yang telah membentuk budaya pemrograman seperti yang kita kenal saat ini mulai dari pionir dan perkembangan teknologi.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-09-25-pentingnya-belajar-programming-culture-bagi-pemula\"},{\"metadata\":{\"title\":\"Bagaimana Cara AI Membantu Review Code Programmer\",\"date\":\"Sep 22, 2023\",\"excerpt\":\"Ada beberapa alasan mengapa Refactory melakukan investasi teknologi ke AI. Manfaat dari penggunaan AI dalam proses review kode programmer sangat beragam dan signifikan. Salah satu manfaat paling mencolok dari AI dalam review kode adalah kemampuannya untuk mendeteksi bug dan masalah kualitas dengan lebih cepat dan akurat daripada review manual.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-09-22-bagaimana-cara-ai-membantu-review-code-programmer\"},{\"metadata\":{\"title\":\"Apa Peran UI/UX Designer dalam Pengembangan Aplikasi\",\"date\":\"Sep 21, 2023\",\"excerpt\":\"Peran UI (User Interface) dan UX (User Experience) dalam pengembangan aplikasi sangat penting karena keduanya berfokus pada bagaimana pengguna berinteraksi dengan aplikasi dan bagaimana mereka merasakan pengalaman pengguna.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-09-21-apa-peran-ui-ux-designer-dalam-pengembangan-aplikasi\"},{\"metadata\":{\"title\":\"Apa beda QA Tester dan QA Engineer\",\"date\":\"Sep 20, 2023\",\"excerpt\":\"Setiap pengembang pasti membutuhkan peran serta QA. Mereka membantu dalam mengidentifikasi dan melaporkan bug, kesalahan, dan masalah dalam perangkat lunak yang dikembangkan. Ini membantu programmer untuk memperbaiki masalah tersebut sebelum perangkat lunak diterapkan ke pengguna akhir.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-09-20-apa-beda-qa-tester-dan-qa-engineer\"},{\"metadata\":{\"title\":\"Tips Melakukan Hallway Testing\",\"date\":\"Sep 19, 2023\",\"excerpt\":\"Hallway testing adalah metode pengujian yang melibatkan pengguna yang tidak terlibat dalam pengembangan produk untuk memberikan umpan balik secepat mungkin. Ini adalah cara yang efektif untuk mengidentifikasi masalah atau potensi perbaikan dalam produk Anda.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-09-19-tips-melakukan-hallway-testing\"},{\"metadata\":{\"title\":\"Kelebihan Menulis Clean Code Bagi Pemula\",\"date\":\"Sep 18, 2023\",\"excerpt\":\"Menulis kode yang bersih (clean code) adalah salah satu aspek yang sangat penting dalam pengembangan perangkat lunak. Bagi pemula yang baru memasuki dunia pemrograman, penting untuk memahami mengapa menulis clean code adalah praktik yang sangat dianjurkan dan berharga.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-09-18-kelebihan-menulis-clean-code-bagi-pemula\"},{\"metadata\":{\"title\":\"Tips Adaptasi Stack Teknologi Pemrograman Baru\",\"date\":\"Sep 12, 2023\",\"excerpt\":\"Mengadaptasi diri dengan stack pemrograman baru adalah langkah penting dalam pengembangan profesional di dunia teknologi.  Dalam dunia teknologi yang terus berkembang dengan cepat, kemampuan untuk beradaptasi dengan berbagai stack teknologi menjadi sangat penting. Stack teknologi merujuk pada kombinasi alat, bahasa pemrograman, dan kerangka kerja yang digunakan untuk membangun aplikasi dan solusi perangkat lunak.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-09-12-tips-adaptasi-stack-teknologi-pemrograman-baru\"},{\"metadata\":{\"title\":\"Kenapa AI Masih Belum Bisa Mengganti Peran Project Manager?\",\"date\":\"Jun 27, 2023\",\"excerpt\":\"Meskipun kecerdasan buatan (AI) telah membuat kemajuan signifikan dalam berbagai bidang, ada beberapa alasan mengapa AI saat ini tidak dapat sepenuhnya menggantikan peran  Project Manager (PM) dalam pengelolaan proyek. Berikut adalah beberapa alasan utama...\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-06-27-kenapa-ai-masih-belum-bisa-mengganti-peran-project-manager\"},{\"metadata\":{\"title\":\"Kutipan Tentang Pemrograman Yang Akan Membuatmu Bersemangat Belajar Ngoding\",\"date\":\"May 22, 2023\",\"excerpt\":\"Saat kita lelah dan tak bersemangat, seringkali menemukan saran atau dorongan yang tepat bisa mengembalikan keinginan untuk bekerja. Kami di Refactory juga memiliki kutipan yang dituliskan di dinding, agar setiap hari saat bekerja, memiliki semangat yang sama. Keinginan untuk lebih baik dan terus tumbuh.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-05-22-kutipan-tentang-pemrograman-yang-akan-membuatmu-bersemangat-belajar-ngoding\"},{\"metadata\":{\"title\":\"Mencari Topik Spesifik di Google Itu Skill Penting\",\"date\":\"May 16, 2023\",\"excerpt\":\"Salah satu skill yang wajib dimiliki oleh programmer adalah kemampuan mencari informasi. Entah melalui Google, StackOverflow, atau tempat lainnya. Secara umum banyak orang tidak sadar cara mencari informasi, entah karena tidak paham logika pencarian, atau memang kurang fokus dalam berusaha.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-05-16-mencari-topik-spesifik-di-google-itu-skill-penting\"},{\"metadata\":{\"title\":\"Apa Yang Dimaksud Dengan Boilerplate Code\",\"date\":\"May 15, 2023\",\"excerpt\":\"Dalam pemrograman komputer, kode boilerplate, atau hanya boilerplate, adalah bagian dari kode yang diulang di banyak tempat dengan sedikit atau tanpa variasi. Saat menggunakan bahasa yang dianggap bertele-tele, pemrogram harus menulis banyak kode boilerplate untuk menyelesaikan hanya fungsionalitas kecil.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-05-15-apa-yang-dimaksud-dengan-boilerplate-code\"},{\"metadata\":{\"title\":\"Mengapa Programmer Perlu Baca Buku\",\"date\":\"Apr 14, 2023\",\"excerpt\":\"Apakah programmer perlu membaca buku? Jawaban pendeknya: perlu. Tapi mengapa? Membaca bukan hanya membantu meningkatkan keterampilan bahasa dan kosa kata seseorang, tetapi juga membantu memperluas wawasan dan pemahaman tentang dunia di sekitar kita. Oleh karena itu, penting untuk mengembangkan kebiasaan membaca secara teratur.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-04-14-mengapa-programmer-perlu-baca-buku\"},{\"metadata\":{\"title\":\"Apa sih Pendekatan Extreme Programing\",\"date\":\"Apr 12, 2023\",\"excerpt\":\"Pendekatan Agile Development adalah sebuah metodologi pengembangan perangkat lunak yang berfokus pada kerjasama tim, keterlibatan pelanggan, dan responsibilitas individual. Pendekatan ini berbeda dengan pendekatan tradisional Waterfall yang lebih berfokus pada perencanaan yang detail dan proses linear.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2023-04-12-apa-sih-pendekatan-extreme-programing\"},{\"metadata\":{\"title\":\"Cara Memanajemen Proyek Yang Oke: Manfaatkan Kalender\",\"date\":\"Sep 23, 2022\",\"excerpt\":\"Kalender merupakan alat yang sangat berguna untuk melacak acara-acara mendatang, deadline, dan juga capaian yang sudah dibuat.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2022-09-23-cara-manajemen-yang-oke\"},{\"metadata\":{\"title\":\"Tips Agar Bisa Mudah Menguasai Bahasa Inggris\",\"date\":\"Sep 9, 2022\",\"excerpt\":\"Untuk menguasai bahasa inggris, di Refactory kami membagikan beberapa tips. Misalnya mendengarkan musik, menonton film, atau berkomunikasi setiap harinya.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2022-09-09-tips-agar-bisa-mudah-menguasai-bahasa-inggris\"},{\"metadata\":{\"title\":\"Apa itu Upskilling dan Reskilling?\",\"date\":\"Aug 26, 2022\",\"excerpt\":\"Sejak pandemi hadir, cara kita memandang pekerjaan berubah. Dalam Laporan Forum Ekonomi Dunia (WEF) 2022  memperkirakan bahwa dalam 10 tahun ke depan, munculnya teknologi dan otomatisasi baru akan memicu masuknya pekerjaan baru dalam profesi yang sedang berkembang.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2022-08-26-apa-itu-upskilling-dan-reskilling\"},{\"metadata\":{\"title\":\"Lima Cara Jadi Pengguna StackOverflow Yang Baik\",\"date\":\"Jul 19, 2022\",\"excerpt\":\"StackOverflow menjadi salah satu hal yang penting untuk dipahami oleh programmer. Situs ini menyediakan banyak layanan dan juga pengetahuan bagi mereka yang hendak belajar pemrograman.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2022-07-19-lima-cara-jadi-pengguna-stackoverflow-yang-baik\"},{\"metadata\":{\"title\":\"Tetap Semangat Kembali Kerja Di Kantor Setelah WFH\",\"date\":\"Aug 19, 2021\",\"excerpt\":\"Meski demikian kabar baik penurunan angka penularan membuat kita rindu kantor. Bertemu dengan kolega, bekerja secara langsung, dan melakukan perjalanan konon jadi salah satu hal yang dirindukan.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2021-08-19-tetap-semangat-kembali-kerja-di-kantor-setelah-wfh\"},{\"metadata\":{\"title\":\"Beberapa Tips untuk Membantu Belajar Pemrograman Lebih Efektif\",\"date\":\"Jul 27, 2021\",\"excerpt\":\"Perlu diingat bahwa setiap tips yang ada di Internet difokuskan untuk mendorong upaya belajar mandiri. Tidak ada cara jitu belajar pemrograman yang dilalui dengan instan.\",\"tags\":[\"Tips Pemrograman\"]},\"slug\":\"2021-07-27-beberapa-tips-untuk-membantu-belajar-pemrograman-lebih-efektif\"}]"}</script>
+			<script>
+				{
+					__sveltekit_kkmzw8 = {
+						base: new URL("../..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null,null];
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.174ef7c4.js"),
+						import("../../_app/immutable/entry/app.d8215686.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3, 12],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+			</div>
+		</div>
+	</body>
+</html>
